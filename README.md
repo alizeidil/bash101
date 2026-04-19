@@ -1,8 +1,7 @@
 # bash101
 just learning to script bash thanks to google gemini :)
 
-ps : i didnt know that w3schools teach bash too.Here is the link : [
-](https://www.w3schools.com/bash/bash_commands.php)
+ps : i didnt know that w3schools teach bash too.Here is the [link](https://www.w3schools.com/bash/bash_commands.php)
 
 # switching to the bash shell
 macOS uses **zsh** by default.To switch to **BASH**, type this command **bash** in the terminal.
