@@ -13,6 +13,6 @@ If you wanna permanently make bash the deafult  , you can use the following comm
 
 ## **TABLE OF CONTENTS**
 
-* [Classics](classics.md)
-* [Lection 2](lection2.md)
-* [Lection 3](lection3.md)
+* [Classics](contents/classics.md)
+* [Lection 2](contents/lection2.md)
+* [Lection 3](contents/lection3.md)
