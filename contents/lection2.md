@@ -10,9 +10,35 @@ Built an ```if-else``` structure to handle user responses.
 Dynamically counted files using ```$(ls | wc -l xargs)``` while trimming unnecessary whitespace.
 
 ## AESTHETICS 💅🏼
-*Integrated **ANSI colors** for a personalized UI.
+Integrated **ANSI colors** for a personalized UI.
 
-*Derived [this source](https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-bash-ps1-prompt)
+1. The Standard 16-Color System (The Classic)
+Previously, It's used like \033[1;33m for yellow.
+
+- Pros: Simple, works on every terminal ever made.
+
+- Cons: Very limited palette (only 8-16 basic colors).
+
+- Format: ```\033[Style;ColorCode m```
+
+2. The Xterm 256-Color System (The Pro Way)
+To achieve more specific shades like Lime Green, Electric Purple, or Deep Orange, I implemented the 256-color chart.
+
+- Pros: 256 distinct shades for high-quality UI design.
+
+- Cons: Requires a slightly more complex syntax.
+
+- Format: ```\033[38;5;ColorNumber m```
+
+- **Example:**
+```bash
+# Standard Yellow
+YELLOW_OLD='\033[1;33m'
+
+# 256-Color Vivid Yellow (Color #226 from the chart)
+YELLOW_NEW='\033[38;5;226m'
+```
+Derived [this source](https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-bash-ps1-prompt)
 
 ---
 ```bash
